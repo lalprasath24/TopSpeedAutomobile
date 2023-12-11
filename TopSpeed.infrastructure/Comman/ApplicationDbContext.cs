@@ -1,7 +1,7 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using TopSpeed.Web.Models;
+using TopSpeed.Domain.Models;
 
-namespace TopSpeed.Web.Data
+namespace TopSpeed.infrastructure.Comman
 {
     public class ApplicationDbContext:DbContext
     {

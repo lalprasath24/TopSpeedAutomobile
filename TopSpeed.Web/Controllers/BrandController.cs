@@ -1,8 +1,9 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Internal;
-using TopSpeed.Web.Data;
-using TopSpeed.Web.Models;
+using TopSpeed.infrastructure.Comman;
+using TopSpeed.Domain.Models;
+using TopSpeed.Application.ApplicationConstants;
 
 namespace TopSpeed.Web.Controllers
 {
@@ -10,6 +11,8 @@ namespace TopSpeed.Web.Controllers
     {
         private readonly ApplicationDbContext _dbcontext;
         private readonly IWebHostEnvironment _WebHostEnvironment;//which is healful to handle the image upload in our projects;
+     
+
         public BrandController(ApplicationDbContext dbContext, IWebHostEnvironment webHostEnvironment)
         {
             _dbcontext = dbContext;
@@ -36,7 +39,7 @@ namespace TopSpeed.Web.Controllers
 
         public IActionResult Create(Brand brand)
         {
-            string webrootpath = _WebHostEnvironment.WebRootPath;//which is helpful to access  webroot path;
+            string webrootpath = _WebHostEnvironment.WebRootPath;//which is helpful to access www.root  path;
 
             var file = HttpContext.Request.Form.Files;
 
@@ -61,6 +64,8 @@ namespace TopSpeed.Web.Controllers
             {
                 _dbcontext.Brand.Add(brand);
                 _dbcontext.SaveChanges();
+
+                TempData["success"] = CommanMessage.RecordCreated;
                 return RedirectToAction(nameof(Index));
             }
             return View();
@@ -135,6 +140,7 @@ namespace TopSpeed.Web.Controllers
 
                 _dbcontext.Update(objFromDb);
                 _dbcontext.SaveChanges();
+                TempData["warning"] = "Record Edit Successfully";
                 return RedirectToAction(nameof(Index));
             }
             return View();
@@ -172,6 +178,8 @@ namespace TopSpeed.Web.Controllers
             
                 _dbcontext.Remove(brand);
                 _dbcontext.SaveChanges();
+
+            TempData["danger"] = "Record Delete Successfully";
                 return RedirectToAction(nameof(Index));
             
             

@@ -1,4 +1,4 @@
-namespace TopSpeed.Web.Models
+namespace TopSpeed.Domain.Models
 {
     public class ErrorViewModel
     {

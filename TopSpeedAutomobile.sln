@@ -3,7 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.7.34031.279
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TopSpeed.Web", "TopSpeed.Web\TopSpeed.Web.csproj", "{5C7E9104-AFBD-453C-A19B-B1EC06A36BF5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TopSpeed.Web", "TopSpeed.Web\TopSpeed.Web.csproj", "{5C7E9104-AFBD-453C-A19B-B1EC06A36BF5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TopSpeed.Application", "TopSpeed.Application\TopSpeed.Application.csproj", "{6DCE0393-4FC9-4BB8-8525-093B86A66307}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TopSpeed.Domain", "TopSpeed.Domain\TopSpeed.Domain.csproj", "{8050284B-030C-4760-A8FE-957561324F1A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TopSpeed.infrastructure", "TopSpeed.infrastructure\TopSpeed.infrastructure.csproj", "{3B1FAEEE-B264-4590-A6C4-564391EF959F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +21,18 @@ Global
 		{5C7E9104-AFBD-453C-A19B-B1EC06A36BF5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5C7E9104-AFBD-453C-A19B-B1EC06A36BF5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5C7E9104-AFBD-453C-A19B-B1EC06A36BF5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6DCE0393-4FC9-4BB8-8525-093B86A66307}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6DCE0393-4FC9-4BB8-8525-093B86A66307}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6DCE0393-4FC9-4BB8-8525-093B86A66307}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6DCE0393-4FC9-4BB8-8525-093B86A66307}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8050284B-030C-4760-A8FE-957561324F1A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8050284B-030C-4760-A8FE-957561324F1A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8050284B-030C-4760-A8FE-957561324F1A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8050284B-030C-4760-A8FE-957561324F1A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3B1FAEEE-B264-4590-A6C4-564391EF959F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3B1FAEEE-B264-4590-A6C4-564391EF959F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3B1FAEEE-B264-4590-A6C4-564391EF959F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3B1FAEEE-B264-4590-A6C4-564391EF959F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

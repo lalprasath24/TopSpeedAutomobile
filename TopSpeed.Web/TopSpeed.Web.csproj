@@ -19,4 +19,10 @@
     <Folder Include="wwwroot\images\brand\" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\TopSpeed.Application\TopSpeed.Application.csproj" />
+    <ProjectReference Include="..\TopSpeed.Domain\TopSpeed.Domain.csproj" />
+    <ProjectReference Include="..\TopSpeed.infrastructure\TopSpeed.infrastructure.csproj" />
+  </ItemGroup>
+
 </Project>

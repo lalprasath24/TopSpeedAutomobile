@@ -3,10 +3,10 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 #nullable disable
 
-namespace TopSpeed.Web.Migrations
+namespace TopSpeed.infrastructure.Migrations
 {
     /// <inheritdoc />
-    public partial class init : Migration
+    public partial class initialMigration : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
